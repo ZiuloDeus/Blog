@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazeBlog - Habilities</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+
+
+/*
+.big-shoulders-<uniquifier> {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fec54d;
+            font-family: "Big Shoulders", sans-serif;
+            text-align: center;
+            position: relative;
+        }
+    
+        header {
+            background-color: #ff2832;
+            color: #121212;
+            padding: 1rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+
+        .video-container {
+            width: 100%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .video-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .image-container {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            left: 550px;
+        }
+
+        .button-container a {
+            
+            display: inline-block;
+            background-color: #121212;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container a:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RazeBlog - Videos</h1>
+    </header>
+
+    <div class="content">
+        <div class="video-section" style="align-items: flex-start;">
+            <div class="video-container">
+                <iframe src="deto.mp4" autoplay></iframe>
+            </div>
+            <p class="video-description">Paint Shells (E): Granada de racimo que explota y se divide en mini-granadas.</p>
+            
+            <div class="video-container">
+                <iframe src="Sachel.mp4" ></iframe>
+            </div>
+            <p class="video-description">Blast Pack (Q): Carga explosiva que puede lanzarse y detonarse manualmente, útil para movilidad o daño.</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="giphy.gif" alt="Imagen central">
+        </div>
+        
+        <div class="video-section" style="align-items: flex-end;">
+            <div class="video-container">
+                <iframe src="rumba.mp4"></iframe>
+            </div>
+            <p class="video-description">Boom Bot (C): Lanza un robot que persigue enemigos y explota al impactar</p>
+            
+            <div class="video-container">
+                <iframe src="Ult.mp4"></iframe>
+            </div>
+            <p class="video-description">Showstopper (X - Definitiva): Lanza un lanzacohetes devastador que causa gran daño en un área.</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="blog.html">Volver a la página anterior</a>
+    </div>
+</body>
+</html>
