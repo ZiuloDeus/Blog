@@ -8,17 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 
-
-/*
-.big-shoulders-<uniquifier> {
-  font-family: "Big Shoulders", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-  */
-
-
         * {
             margin: 0;
             padding: 0;
@@ -101,6 +90,49 @@
         .button-container a:hover {
             background-color: #333333;
         }
+
+        .duelistas-section {
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff3d4;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .duelistas-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #121212;
+        }
+
+        .duelistas-flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .duelista-link {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .duelista-link:hover {
+            transform: scale(1.05);
+        }
+
+        .duelista-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -120,6 +152,16 @@
         </div>
         <div class="image-container">
             <img src="Raze_29.jpg">
+        </div>
+    </div>
+
+    <div class="duelistas-section">
+        <h2>Otros duelistas</h2>
+        <div class="duelistas-flex">
+            <a href="#" class="duelista-link"><img src="reyna-avatar-removebg-preview.png" alt="Duelista 1" class="duelista-img"></a>
+            <a href="#" class="duelista-link"><img src="phoeix.png" alt="Duelista 2" class="duelista-img"></a>
+            <a href="#" class="duelista-link"><img src="yoru.png" alt="Duelista 3" class="duelista-img"></a>
+            <a href="#" class="duelista-link"><img src="image-removebg-preview.png" alt="Duelista 4" class="duelista-img"></a>
         </div>
     </div>
 
